@@ -1,0 +1,264 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
+}
+
+header {
+  background-image: url(header-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  filter: hue-rotate(90deg);
+
+  height: 100vh;
+}
+ul {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  margin-top: 2rem;
+  color: #ffd700;
+  font-weight: 600;
+}
+ul a {
+  text-decoration: none;
+  color: #ffd700;
+}
+ul a:hover {
+  color: grey;
+}
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+header h1 {
+  margin-top: 5rem;
+  text-align: center;
+  font-weight: 100;
+  color: white;
+  font-size: 5rem;
+}
+
+.Grid-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  /* margin-left: 4rem;
+  margin-right: 4rem; */
+  background-color: #78a789;
+}
+.Grid-content div:nth-of-type(1) {
+  /* border: 3px solid black; */
+  /* border-radius: 50%; */
+  padding: 16px;
+  height: 92.3vh;
+}
+.Grid-content-img {
+  width: 100%;
+  margin-top: 3rem;
+  margin-left: 4rem;
+}
+.content-section {
+  border: none;
+  border-radius: 16px;
+  background-color: black;
+  opacity: 0.4;
+  color: white;
+  box-shadow: -3px 9px 15px 0px rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  height: fit-content;
+}
+.content-section p:nth-of-type(1) {
+  line-height: 4;
+  font-size: 2rem;
+}
+.content-section p:nth-of-type(2) {
+  line-height: 1.5;
+}
+.content-section {
+  margin-left: 4rem;
+  margin-top: 7rem;
+  max-width: 300px;
+}
+
+.About-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-section {
+  border: none;
+  border-radius: 16px;
+  background-color: #78a789;
+  margin: 2rem 2rem 2rem 2rem;
+  height: 60vh;
+  max-width: 300px;
+}
+.icon-section i {
+  width: 60px;
+  height: 60px;
+  background-color: rgb(223, 236, 248);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2rem;
+  font-size: 2rem;
+}
+
+.Service-section h1 {
+  margin-top: 5rem;
+  text-align: center;
+}
+
+.About-section p {
+  margin-top: 2rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+.Service-section h3 {
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+.Skill-cont {
+  display: flex;
+  justify-content: baseline;
+  gap: 25px;
+  margin-top: 40px;
+  flex-wrap: wrap;
+  margin-left: 10rem;
+  margin-right: 10rem;
+}
+
+.Skill-card {
+  background-color: #78a789;
+  border: none;
+  border-radius: 20px;
+  width: 280px;
+  padding: 30px;
+  margin-bottom: 5rem;
+}
+
+.Skill-icon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 35px;
+  font-weight: bold;
+  border-radius: 10px;
+  background-color: rgb(223, 236, 248);
+  margin-left: 5.5rem;
+  margin-right: 5rem;
+}
+
+/* .Skill-icon i:nth-of-type(1) {
+  color: rgb(255, 98, 0);
+} */
+.Skill-section h1 {
+  text-align: center;
+  margin-top: 10rem;
+  color: white;
+}
+/* 
+.Skill-section p {
+  text-align: center;
+  
+} */
+
+.Skill-cont h3 {
+  text-align: center;
+}
+
+.Skill-section {
+  background-color: #184326;
+}
+
+.Skill-section h4 {
+  text-align: center;
+  color: white;
+}
+
+.Contact-section h1 {
+  font-size: 45px;
+  /* margin-bottom: 10px; */
+  text-align: center;
+  /* padding: 80px 20px; */
+}
+
+.Contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 500px;
+  margin: auto;
+  margin-bottom: 3rem;
+}
+
+.Contact-section div {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.Contact-section {
+  background-color: #78a789;
+}
+.Contact-form input,
+textarea {
+  background-color: #184326;
+  border-radius: 10px;
+  border: none;
+  padding: 1rem 1.5rem;
+  font-size: 1.2rem;
+}
+
+button {
+  background-color: white;
+  padding: 1rem 1.5rem;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.footer-section {
+  background-color: #184326;
+  min-height: 10vh;
+}
+
+.footer-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  color: white;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+.footer-content {
+  margin-top: 1rem;
+  text-align: center;
+  color: white;
+  margin-bottom: 1rem;
+}
